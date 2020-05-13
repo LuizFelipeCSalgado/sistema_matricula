@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -d --name matriculasdb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mypass1234 mysql
