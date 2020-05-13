@@ -10,3 +10,7 @@ Para o sistema foi projetado que tenha as seguintes camadas e padrões:
 
 Poderia ser implementado em um próximo passo uma camada de *service*, reponsável por chamar
 os *use cases*, diminuindo o acoplamento entre o *controller* e *use cases*.
+
+
+Para rodar o projeto é preciso setar PYTHONPATH com o presente diretório.
+  set PYTHONPATH=$PYTHONPATH:$(pwd)
