@@ -14,3 +14,9 @@ class Aluno:
         self.curso = aluno_info.get('curso', 'N/A')
         self.disciplinas_matriculadas = aluno_info.get('disciplinas_matriculadas', 'N/A')
         self.disciplinas_requisitadas = aluno_info.get('disciplinas_requisitadas', 'N/A')
+
+    def esta_aguardando_aprovacao_na_disciplina(nome_disciplina: str) -> bool:
+        return nome_disciplina in self.disciplinas_requisitadas
+
+    def esta_matriculado_na_disciplina(nome_disciplina: str) -> bool:
+        return nome_disciplina in self.disciplinas_matriculadas
