@@ -1,12 +1,14 @@
 import mysql.connector
 
-USER = 'root'
-PASSWORD = 'mypass1234'
-HOST = 'localhost'
-DATABASE = 'sistema_matriculas'
+connection_cred = {
+    'user': 'root',
+    'password': 'mypass1234',
+    'host': 'localhost',
+    'database': 'sistema_matriculas'
+}
 
 def get_connection():
-    return mysql.connector.connect(host=HOST, user=USER, password=PASSWORD, database=DATABASE)
+    return mysql.connector.connect(**connection_cred)
 
 def get_cursor():
     connection = get_connection()
